@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Budget Manager App</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+
+            {% if user %}
+                <!-- Render these links if the user is authenticated -->
+                <li><a href="/accounts">Accounts</a></li>
+                <li><a href="/accounts/new">New Account</a></li>
+                <li><a href="/transactions">Transactions</a></li>
+            {% else %}
+                <!-- Render this link if the user is not authenticated -->
+                <li><a href="/login">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <h1>Welcome to the Budget Manager App</h1>
+    <p>Track your expenses and manage your finances with ease.</p>
+</body>
+</html>

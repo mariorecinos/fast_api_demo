@@ -1,0 +1,7 @@
+__pycache__
+.env
+fastenv
+db
+accounts.csv
+transactions.csv
+users.csv
